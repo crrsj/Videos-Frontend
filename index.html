@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./script.css">
+    <title>Desenhos</title>
+</head>
+<body>
+    <header>
+        <h1>Desenhos Antigos</h1>
+        <p>Adicione e veja seus vídeos favoritos</p>
+      </header>
+      <main>
+        <section class="form-container">
+          <h2>Adicionar Novo Vídeo</h2>
+          <form id="video-form">
+            <label for="video-url">URL do Vídeo:</label>
+            <input type="url" id="video-url" placeholder="https://www.youtube.com/embed/ID" required>
+            
+            <label for="video-title">Nome do Vídeo:</label>
+            <input type="text" id="video-title" placeholder="Digite o nome do vídeo" required>
+            
+            <label for="video-description">Descrição:</label>
+            <textarea id="video-description" placeholder="Breve descrição do vídeo" required></textarea>
+            
+            <button type="submit">Adicionar Vídeo</button>
+          </form>
+        </section>
+        <section id="video-gallery" class="video-gallery">
+          <!-- Cards dos vídeos serão exibidos aqui -->
+        </section>
+      </main>
+      <script src="./script.js"></script>
+</body>
+</html>
